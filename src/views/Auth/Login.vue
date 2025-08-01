@@ -41,16 +41,15 @@ function handleLogin() {
         Welcome Back <span class="inline-block animate-wave">👋</span>
       </h2>
 
-      <div class="space-y-4">
+      <form @submit.prevent="handleLogin" class="space-y-4">
         <div>
-         <input
+          <input
             v-model="email"
             type="email"
             placeholder="Email address"
             class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition focus:outline-none focus:ring-2 focus:ring-blue-300"
             :class="{ 'border-red-500': emailError }"
           />
-
           <p v-if="emailError" class="text-red-500 text-xs mt-1">{{ emailError }}</p>
         </div>
 
@@ -66,13 +65,12 @@ function handleLogin() {
         </div>
 
         <button
-          @click="handleLogin"
+          type="submit"
           class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white text-base font-semibold rounded-lg transition shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
         >
           Sign In
         </button>
-
-      </div>
+      </form>
 
       <p class="text-sm text-gray-600 text-center mt-4">
         Don’t have an account?
@@ -81,3 +79,4 @@ function handleLogin() {
     </div>
   </div>
 </template>
+

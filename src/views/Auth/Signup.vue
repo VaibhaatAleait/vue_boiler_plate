@@ -44,7 +44,8 @@ function handleSignup() {
     <div class="bg-white/80 backdrop-blur-md shadow-xl rounded-xl p-8 w-full max-w-md border border-white/30">
       <h2 class="text-2xl font-bold text-gray-800 text-center mb-6">Create Account</h2>
 
-      <div class="space-y-4">
+      <!-- ✅ Form added -->
+      <form @submit.prevent="handleSignup" class="space-y-4">
         <div>
           <input
             v-model="name"
@@ -75,13 +76,14 @@ function handleSignup() {
           <p v-if="errors.password" class="text-red-600 text-xs mt-1">{{ errors.password }}</p>
         </div>
 
+        <!-- ✅ Use type="submit" -->
         <button
-          @click="handleSignup"
+          type="submit"
           class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition"
         >
           Sign Up
         </button>
-      </div>
+      </form>
 
       <p class="text-sm text-gray-600 text-center mt-4">
         Already have an account?
@@ -90,3 +92,4 @@ function handleSignup() {
     </div>
   </div>
 </template>
+
