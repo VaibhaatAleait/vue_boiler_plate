@@ -8,7 +8,7 @@ A clean and minimal Vue 3 starter template powered by Vite, Tailwind CSS, and Pi
 - 🧩 **Vue 3** – Composition API with modern syntax
 - 🌈 **Tailwind CSS** – Utility-first, customizable styling
 - 🌱 **Pinia** – Modern state management for Vue
-- ✅ Pre-built views: `Home.vue`, `About.vue`
+- ✅ Pre-built views: `Home.vue`, `About.vue` ,`Login.vue`, `Signup.vue`
 - 🎨 Clean, responsive UI with Tailwind
 
 ## 📁 Folder Structure
@@ -31,7 +31,7 @@ vue_boiler_plate/
 
 ```bash
 # Clone the project
-git clone https://github.com/your-username/vue_boiler_plate.git
+git clone https://github.com/VaibhaatAleait/vue_boiler_plate.git
 cd vue_boiler_plate
 
 # Install dependencies

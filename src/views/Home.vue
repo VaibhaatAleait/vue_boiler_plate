@@ -39,9 +39,7 @@
 </template>
 
 <script setup>
-// No JS logic yet
 </script>
 
 <style scoped>
-/* Optional: You can add transitions or effects here */
 </style>

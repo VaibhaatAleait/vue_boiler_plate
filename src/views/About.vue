@@ -28,19 +28,15 @@
             </ul>
           </div>
         </div>
-
-        <div class="mt-8 text-sm text-gray-500 text-center">
-          © {{ new Date().getFullYear() }} Vue Boilerplate. Built with ❤️ by your team.
-        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script setup>
-// No logic needed here
+
 </script>
 
 <style scoped>
-/* No overflow styles needed anymore */
+
 </style>

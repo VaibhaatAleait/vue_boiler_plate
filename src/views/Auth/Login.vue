@@ -43,13 +43,14 @@ function handleLogin() {
 
       <div class="space-y-4">
         <div>
-          <input
+         <input
             v-model="email"
             type="email"
             placeholder="Email address"
-            class="w-full px-4 py-2 border rounded-md text-sm transition focus:outline-none"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition focus:outline-none focus:ring-2 focus:ring-blue-300"
             :class="{ 'border-red-500': emailError }"
           />
+
           <p v-if="emailError" class="text-red-500 text-xs mt-1">{{ emailError }}</p>
         </div>
 
@@ -58,7 +59,7 @@ function handleLogin() {
             v-model="password"
             type="password"
             placeholder="Password"
-            class="w-full px-4 py-2 border rounded-md text-sm transition focus:outline-none"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition focus:outline-none focus:ring-2 focus:ring-blue-300"
             :class="{ 'border-red-500': passwordError }"
           />
           <p v-if="passwordError" class="text-red-500 text-xs mt-1">{{ passwordError }}</p>
@@ -66,10 +67,11 @@ function handleLogin() {
 
         <button
           @click="handleLogin"
-          class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition"
+          class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white text-base font-semibold rounded-lg transition shadow-md hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-blue-300"
         >
           Sign In
         </button>
+
       </div>
 
       <p class="text-sm text-gray-600 text-center mt-4">

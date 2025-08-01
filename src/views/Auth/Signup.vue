@@ -50,7 +50,7 @@ function handleSignup() {
             v-model="name"
             type="text"
             placeholder="Full Name"
-            class="w-full px-4 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition focus:outline-none focus:ring-2 focus:ring-blue-300"
           />
           <p v-if="errors.name" class="text-red-600 text-xs mt-1">{{ errors.name }}</p>
         </div>
@@ -60,7 +60,7 @@ function handleSignup() {
             v-model="email"
             type="email"
             placeholder="Email"
-            class="w-full px-4 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition focus:outline-none focus:ring-2 focus:ring-blue-300"
           />
           <p v-if="errors.email" class="text-red-600 text-xs mt-1">{{ errors.email }}</p>
         </div>
@@ -70,14 +70,14 @@ function handleSignup() {
             v-model="password"
             type="password"
             placeholder="Password"
-            class="w-full px-4 py-2 border border-gray-300 rounded-md text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg text-base transition focus:outline-none focus:ring-2 focus:ring-blue-300"
           />
           <p v-if="errors.password" class="text-red-600 text-xs mt-1">{{ errors.password }}</p>
         </div>
 
         <button
           @click="handleSignup"
-          class="w-full py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition"
+          class="w-full py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md transition"
         >
           Sign Up
         </button>

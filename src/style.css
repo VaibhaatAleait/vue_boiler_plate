@@ -1,10 +1,9 @@
-/* Example: keep only root font config if needed */
+/* 
+  This file is for any global non-Tailwind CSS styles. 
+  Avoid using @apply or Tailwind utility classes here. 
+  Use this only for raw custom CSS or third-party overrides.
+*/
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-}
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; 
 }
 

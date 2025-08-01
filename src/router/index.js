@@ -8,12 +8,20 @@ import Layout from '../components/Layout.vue'
 const routes = [
   {
     path: '/',
+    redirect: '/login', 
+  },
+  {
+    path: '/login',
+    component: Login,
+  },
+  {
+    path: '/signup',
+    component: Signup,
+  },
+  {
+    path: '/',
     component: Layout,
     children: [
-      {
-        path: '',
-        redirect: '/home', 
-      },
       {
         path: 'home',
         component: Home,
@@ -24,19 +32,13 @@ const routes = [
       },
     ],
   },
-  {
-    path: '/login',
-    component: Login,
-  },
-  {
-    path: '/signup',
-    component: Signup,
-  },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
 });
+
+
 
 export default router;
